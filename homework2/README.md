@@ -8,9 +8,7 @@ ModelBased and ItemBased Recommend System
  
   
 Person Correlation between items i,j:
- <div align=center><img  src="https://latex.codecogs.com/gif.latex?w_{u,v}&space;=&space;\frac{\sum_{i&space;\in&space;I}&space;(r_{u,i}&space;-&space;\bar{r}_{u})(r_{v,i}&space;-&space;\bar{r}_{v})}
- {\sqrt{\sum_{i&space;\in&space;I}&space;(r_{u,i}&space;-&space;\bar{r}_{u})^2}
- \sqrt{\sum_{i&space;\in&space;I}&space;(r_{v,i}&space;-&space;\bar{r}_{v})^2}}"></div>
+ <div align=center><img  src="https://latex.codecogs.com/gif.latex?w_{u,v}&space;=&space;\frac{\sum_{i&space;\in&space;I}&space;(r_{u,i}&space;-&space;\bar{r}_{u})(r_{v,i}&space;-&space;\bar{r}_{v})}%20{\sqrt{\sum_{i&space;\in&space;I}&space;(r_{u,i}&space;-&space;\bar{r}_{u})^2}%20\sqrt{\sum_{i&space;\in&space;I}&space;(r_{v,i}&space;-&space;\bar{r}_{v})^2}}"></div>
  
  Make Item-Based Predictions Using a Simple Weighted Average:  
  <div align=center><img src="https://latex.codecogs.com/gif.latex?P_{a,i}&space;=\frac{\sum_{n&space;\in&space;N}r_{u,n}&space;\cdot&space;w_{i,n}}{\sum_{n&space;\in&space;N}\left&space;|&space;w_{i,n}&space;\right&space;|}"></div>
