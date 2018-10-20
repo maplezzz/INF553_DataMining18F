@@ -10,10 +10,10 @@ ModelBased and ItemBased Recommend System
 Person Correlation between items i,j:
  <div align=center><img  src="https://latex.codecogs.com/gif.latex?w_{u,v}&space;=&space;\frac{\sum_{i&space;\in&space;I}&space;(r_{u,i}&space;-&space;\bar{r}_{u})(r_{v,i}&space;-&space;\bar{r}_{v})}
  {\sqrt{\sum_{i&space;\in&space;I}&space;(r_{u,i}&space;-&space;\bar{r}_{u})^2}
- \sqrt{\sum_{i&space;\in&space;I}&space;(r_{v,i}&space;-&space;\bar{r}_{v})^2}}" /></a></div>
+ \sqrt{\sum_{i&space;\in&space;I}&space;(r_{v,i}&space;-&space;\bar{r}_{v})^2}}"></div>
  
  Make Item-Based Predictions Using a Simple Weighted Average:  
- <div align=center><img src="https://latex.codecogs.com/gif.latex?P_{a,i} =\frac{\sum_{n \in N}r_{u,n} \cdot w_{i,n}}{\sum_{n \in N}\left | w_{i,n} \right |}"></div>
+ <div align=center><img src="https://latex.codecogs.com/gif.latex?P_{a,i}&space;=\frac{\sum_{n&space;\in&space;N}r_{u,n}&space;\cdot&space;w_{i,n}}{\sum_{n&space;\in&space;N}\left&space;|&space;w_{i,n}&space;\right&space;|}"></div>
   
   Loss Function:  
   <div align=center><img src="https://latex.codecogs.com/gif.latex?RMSE&space;=&space;\sqrt{\frac{1}{n}\sum_{i}({Prediction}_i&space;-&space;{Rate}_i)^2}"></div>
@@ -48,9 +48,9 @@ spark-submit --class ModelBasedCF Fengyu_Zhang_hw2.jar absolute_path/to/train_re
   |Time|90 sec 
   |    |   
   |BaseLine  |  
-  | RMSE | 1.08  
- 
- 
+  | RMSE | 1.08        
+      
+      
  * ItemBased CF    
  
   |Range of errors|Count 
@@ -62,7 +62,7 @@ spark-submit --class ModelBasedCF Fengyu_Zhang_hw2.jar absolute_path/to/train_re
   |>= 4|68  
   |RMSE|1.0998070682933019
   |Time|126 sec 
-  |
+  |    |
   |BaseLine|  
   | RMSE | 1.11
   | Time | 450 sec
